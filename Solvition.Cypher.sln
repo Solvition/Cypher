@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solvition.Cypher.Domain.Test", "Solvition.Cypher.Domain.Test\Solvition.Cypher.Domain.Test.csproj", "{840FCF55-4D5F-4930-8BEA-8B9E550D075F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solvition.Cypher.ViewModel.Test", "Solvition.Cypher.ViewModel.Test\Solvition.Cypher.ViewModel.Test.csproj", "{A1028FD8-0F27-445F-BC48-175AA9A0C8CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solvition.Cypher.ViewWpf", "Solvition.Cypher.ViewWpf\Solvition.Cypher.ViewWpf.csproj", "{6A1DF7EF-4645-4262-9246-B8F9F086F81A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solvition.Cypher.ViewModel", "Solvition.Cypher.ViewModel\Solvition.Cypher.ViewModel.csproj", "{C8B1BE12-BF48-4F4B-98C8-1CC64BE2FC1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solvition.Cypher.Domain", "Solvition.Cypher.Domain\Solvition.Cypher.Domain.csproj", "{B7515048-320D-47FF-A2D5-52A9D4E0730F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{840FCF55-4D5F-4930-8BEA-8B9E550D075F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840FCF55-4D5F-4930-8BEA-8B9E550D075F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840FCF55-4D5F-4930-8BEA-8B9E550D075F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840FCF55-4D5F-4930-8BEA-8B9E550D075F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1028FD8-0F27-445F-BC48-175AA9A0C8CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1028FD8-0F27-445F-BC48-175AA9A0C8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1028FD8-0F27-445F-BC48-175AA9A0C8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1028FD8-0F27-445F-BC48-175AA9A0C8CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A1DF7EF-4645-4262-9246-B8F9F086F81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A1DF7EF-4645-4262-9246-B8F9F086F81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A1DF7EF-4645-4262-9246-B8F9F086F81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A1DF7EF-4645-4262-9246-B8F9F086F81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B1BE12-BF48-4F4B-98C8-1CC64BE2FC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B1BE12-BF48-4F4B-98C8-1CC64BE2FC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B1BE12-BF48-4F4B-98C8-1CC64BE2FC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B1BE12-BF48-4F4B-98C8-1CC64BE2FC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7515048-320D-47FF-A2D5-52A9D4E0730F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7515048-320D-47FF-A2D5-52A9D4E0730F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7515048-320D-47FF-A2D5-52A9D4E0730F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7515048-320D-47FF-A2D5-52A9D4E0730F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

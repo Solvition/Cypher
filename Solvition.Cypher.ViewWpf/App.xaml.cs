@@ -1,4 +1,5 @@
-﻿using Solvition.Cypher.ViewWpf.Views;
+﻿using Solvition.Cypher.ViewModel.ViewModels;
+using Solvition.Cypher.ViewWpf.Views;
 using System.Windows;
 
 namespace Solvition.Cypher.ViewWpf
@@ -11,6 +12,7 @@ namespace Solvition.Cypher.ViewWpf
         private void ApplicationStartup(object sender, StartupEventArgs e)
         {
             var mainWindow = new MainWindowView();
+            mainWindow.DataContext = new MainWindowViewModel();
             mainWindow.Show();
         }
     }

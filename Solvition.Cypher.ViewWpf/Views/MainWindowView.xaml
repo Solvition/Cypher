@@ -12,7 +12,8 @@
             <MenuItem
                 Header="_File">
                 <MenuItem
-                    Header="_New"/>
+                    Header="_New"
+                    Command="{Binding Path=NewFileCommand}"/>
             </MenuItem>
         </Menu>
         <Grid>

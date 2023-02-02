@@ -1,4 +1,4 @@
-﻿using Solvition.Cypher.ViewModel.Commands;
+﻿using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
 
 namespace Solvition.Cypher.ViewModel.ViewModels
@@ -13,6 +13,6 @@ namespace Solvition.Cypher.ViewModel.ViewModels
             set { _libraryViewModel = value; RaisePropertyChanged(); }
         }
 
-        public ICommand NewFileCommand => new ActionCommand(() => LibraryViewModel = new LibraryViewModel());
+        public ICommand NewFileCommand => new RelayCommand(() => LibraryViewModel = new LibraryViewModel());
     }
 }

@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Solvition.Cypher.ViewWpf.Views"
         mc:Ignorable="d"
-        Title="Cypher" Height="450" Width="800">
+        Title="Cypher"
+        Height="450"
+        Width="800">
     <DockPanel>
         <Menu
             DockPanel.Dock="Top">
@@ -25,8 +27,7 @@
             </Grid.ColumnDefinitions>
             <local:LibraryView
                 Grid.Column="0"
-                DataContext="{Binding Path=LibraryViewModel}"
-                Background="LightGray"/>
+                DataContext="{Binding Path=LibraryViewModel}"/>
         </Grid>
     </DockPanel>
 </Window>

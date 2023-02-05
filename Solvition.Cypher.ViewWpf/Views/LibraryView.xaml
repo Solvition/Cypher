@@ -9,17 +9,45 @@
     mc:Ignorable="d" 
     d:DesignHeight="450"
     d:DesignWidth="800">
-    <Grid>
+    <Grid
+        x:Name="_grid">
+        <Grid.Resources>
+            <Style
+                TargetType="RowDefinition">
+                <Setter
+                    Property="Height"
+                    Value="auto"/>
+                <Style.Triggers>
+                    <DataTrigger
+                        Binding="{Binding Tag.IsExpanded, RelativeSource={RelativeSource Self}}"
+                        Value="true">
+                        <Setter
+                            Property="Height"
+                            Value="*"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition
-                Height="auto"/>
+                Tag="{Binding ElementName=_pointExpander}"/>
             <RowDefinition
-                Height="auto"/>
+                Tag="{Binding ElementName=_lineExpander}"/>
+            <RowDefinition
+                Tag="{Binding ElementName=_layerExpander}"/>
         </Grid.RowDefinitions>
         <c:LibraryExpander
-            Grid.Row="0">
+            x:Name="_pointExpander"
+            Grid.Row="0"
+            Expanded="_expander_Expanded">
         </c:LibraryExpander>
         <c:LibraryExpander
-            Grid.Row="1"/>
+            x:Name="_lineExpander"
+            Grid.Row="1"
+            Expanded="_expander_Expanded"/>
+        <c:LibraryExpander
+            x:Name="_layerExpander"
+            Grid.Row="2"
+            Expanded="_expander_Expanded"/>
     </Grid>
 </UserControl>

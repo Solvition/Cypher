@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--This file represents feature coding definitions-->
+<FeatureCodingDefinitions CreationDate="2006-03-21T13:06:03"
+						  DateModified="2023-02-05T12:00:00-06:00"
+						  SchemaVersion="9"
+						  Author="Trimble"
+						  xmlns="http://trimble.com/schema/fxl">
+	<LineStyleDefinitions Version="3.0"
+						  xmlns="http://trimble.com/schema/linestyle">
+		<LineStyleDefinition Name="Dashed Line"
+							 Description="Dashed Line Description">
+			<Units Reference="Paper"
+				   Length="Metric" />
+			<PatternType>PartToJoin</PatternType>
+			<Pattern TotalLength="1.000000"
+					 EndLength="0.665000">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="0.000000"
+							  Y="0.000000" />
+					<Location X="0.665000"
+							  Y="0.000000" />
+				</Line>
+			</Pattern>
+		</LineStyleDefinition>
+		<LineStyleDefinition Name="With Text"
+							 Description="With Text Description">
+			<Units Reference="Paper"
+				   Length="Metric" />
+			<PatternType>PartToPath</PatternType>
+			<Pattern TotalLength="0.700000"
+					 EndLength="0.500000">
+				<Text Bold="false"
+					  Color="Empty"
+					  Italic="false"
+					  TypeFace="Courier New"
+					  UnderLine="false"
+					  CurveText="false">
+					<Location X="0.000000"
+							  Y="0.030000" />
+					<Height>0.060000</Height>
+					<Text>C</Text>
+					<Orientation Type="Relative"
+								 Angle="0.000000" />
+				</Text>
+			</Pattern>
+		</LineStyleDefinition>
+		<LineStyleDefinition Name="Multiple Pattern"
+							 Description="Multiple Pattern Description">
+			<Units Reference="Paper"
+				   Length="Metric" />
+			<PatternType>OneToPath</PatternType>
+			<Pattern TotalLength="1.000000"
+					 EndLength="0.300000">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="0.000000"
+							  Y="-0.150000" />
+					<Location X="0.000000"
+							  Y="0.150000" />
+				</Line>
+			</Pattern>
+			<Pattern TotalLength="1.000000"
+					 EndLength="1.044031">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="0.000000"
+							  Y="0.150000" />
+					<Location X="1.000000"
+							  Y="-0.150000" />
+				</Line>
+			</Pattern>
+			<Pattern TotalLength="1.000000"
+					 EndLength="0.300000">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="1.000000"
+							  Y="-0.150000" />
+					<Location X="1.000000"
+							  Y="0.150000" />
+				</Line>
+			</Pattern>
+			<Pattern TotalLength="1.000000"
+					 EndLength="1.044031">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="1.000000"
+							  Y="0.150000" />
+					<Location X="0.000000"
+							  Y="-0.150000" />
+				</Line>
+			</Pattern>
+			<Pattern TotalLength="1.000000"
+					 EndLength="1.000000">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="0.000000"
+							  Y="-0.150000" />
+					<Location X="1.000000"
+							  Y="-0.150000" />
+				</Line>
+			</Pattern>
+			<Pattern TotalLength="1.000000"
+					 EndLength="1.000000">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="1.000000"
+							  Y="0.150000" />
+					<Location X="0.000000"
+							  Y="0.150000" />
+				</Line>
+			</Pattern>
+		</LineStyleDefinition>		
+		<LineStyleDefinition Name="Line Arc Symbol Pattern"
+							 Description="Line Arc Symbol Pattern Description">
+			<Units Reference="Paper"
+				   Length="Metric" />
+			<PatternType>PartToPath</PatternType>
+			<Pattern TotalLength="1.500000"
+					 EndLength="1.500000">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="0.000000"
+							  Y="0.000000" />
+					<Location X="0.500000"
+							  Y="0.000000" />
+				</Line>
+				<Arc Color="Empty">
+					<Location X="0.750000"
+							  Y="0.000000" />
+					<Radius>0.2</Radius>
+					<StartAngle>-270.000000</StartAngle>
+					<DeltaAngle>90.000000</DeltaAngle>
+				</Arc>
+				<Symbol Name="Box"
+						Scale="0.020000">
+					<Location X="1.000000"
+							  Y="0.000000" />
+					<Orientation Type="Relative"
+								 Angle="45.000000" />
+				</Symbol>
+			</Pattern>
+		</LineStyleDefinition>
+	</LineStyleDefinitions>
+	<SymbolDefinitions Version="2"
+					   xmlns="http://trimble.com/schema/symbol">
+		<SymbolDefinition Name="Box">
+			<Units Reference="Paper"
+				   Length="Metric" />
+			<Scale Size="Variable"
+				   Shape="Fixed" />
+			<Rotation Type="Allow" />
+			<Dimension First="Length"
+					   Second="Length" />
+			<Component Number="1"
+					   Name="">
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="-1.000000"
+							  Y="1.000000" />
+					<Location X="1.000000"
+							  Y="1.000000" />
+				</Line>
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="1.000000"
+							  Y="1.000000" />
+					<Location X="1.000000"
+							  Y="-1.000000" />
+				</Line>
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="1.000000"
+							  Y="-1.000000" />
+					<Location X="-1.000000"
+							  Y="-1.000000" />
+				</Line>
+				<Line Color="Empty"
+					  LineWeight="1">
+					<Location X="-1.000000"
+							  Y="-1.000000" />
+					<Location X="-1.000000"
+							  Y="1.000000" />
+				</Line>
+				<Text Bold="false"
+					  Color="Empty"
+					  Italic="false"
+					  TypeFace="Courier New"
+					  UnderLine="false">
+					<Location X="-0.100000"
+							  Y="-0.250000" />
+					<Height>0.500000</Height>
+					<Text>B</Text>
+					<Orientation Type="Relative"
+								 Angle="0.000000" />
+				</Text>
+			</Component>
+			<Component Number="2"
+					   Name="" />
+		</SymbolDefinition>
+		<SymbolDefinition Name="Double circle">
+			<Units Reference="Paper"
+				   Length="Metric" />
+			<Scale Size="Variable"
+				   Shape="Fixed" />
+			<Rotation Type="Allow" />
+			<Dimension First="Length"
+					   Second="Length" />
+			<Component Number="1"
+					   Name="">
+				<Arc Color="Empty">
+					<Location X="0.000000"
+							  Y="0.000000" />
+					<Radius>1.000000</Radius>
+					<StartAngle>90.000000</StartAngle>
+					<DeltaAngle>360.000010</DeltaAngle>
+				</Arc>
+				<Arc Color="Empty">
+					<Location X="0.000000"
+							  Y="0.000000" />
+					<Radius>0.600000</Radius>
+					<StartAngle>90.000000</StartAngle>
+					<DeltaAngle>360.000010</DeltaAngle>
+				</Arc>
+			</Component>
+			<Component Number="2"
+					   Name="" />
+			</SymbolDefinition>
+	</SymbolDefinitions>
+	<LabelStyles SchemaVersion="1"
+				 xmlns="http://trimble.com/schema/labelstyle">
+		<LineLabelStyles />
+		<PointLabelStyles />
+		<PolygonLabelStyles />
+	</LabelStyles>
+	<LayerDefinitions>
+		<LayerDefinition>
+			<Name>0</Name>
+			<Color>FFFFFFFF</Color>
+			<LineStyleName>Dashed Line</LineStyleName>
+			<LineWeight>0</LineWeight>
+			<ProtectLayer>true</ProtectLayer>
+			<LayerGroup>&lt;&lt;None&gt;&gt;</LayerGroup>
+			<DisplayPriority>64</DisplayPriority>
+			<Print>true</Print>
+		</LayerDefinition>
+	</LayerDefinitions>
+	<ControlCodeDefinitions>
+		<ControlCodeDefinition Type="Close"
+							   Description="CloseLine"
+							   Code="CL" />
+		<ControlCodeDefinition Type="NoJoin"
+							   Description="DoNotJoinLine"
+							   Code="IG" />
+		<ControlCodeDefinition Type="End"
+							   Description="EndLine"
+							   Code="END" />
+		<ControlCodeDefinition Type="EndOnArc"
+							   Description="EndNonTangentArc"
+							   Code="ENTA" />
+		<ControlCodeDefinition Type="EndCurve"
+							   Description="EndSmoothCurve"
+							   Code="ESC" />
+		<ControlCodeDefinition Type="EndArc"
+							   Description="EndTangentArc"
+							   Code="ETA" />
+		<ControlCodeDefinition Type="HorizontalOffset"
+							   Description="HorizontalOffset"
+							   Code="H" />
+		<ControlCodeDefinition Type="JoinToPoint"
+							   Description="JoinToPointNumber"
+							   Code="JPT" />
+		<ControlCodeDefinition Type="StartCircleCenter"
+							   Description="StartCircleCenter"
+							   Code="SCC" />
+		<ControlCodeDefinition Type="StartCircleEdge"
+							   Description="StartCircleEdge"
+							   Code="SCE" />
+		<ControlCodeDefinition Type="Start"
+							   Description="StartLine"
+							   Code="ST" />
+		<ControlCodeDefinition Type="NewArc"
+							   Description="StartNonTangentArc"
+							   Code="SNTA" />
+		<ControlCodeDefinition Type="StartRectangle"
+							   Description="StartRectangle"
+							   Code="SR" />
+		<ControlCodeDefinition Type="StartCurve"
+							   Description="StartSmoothCurve"
+							   Code="SSC" />
+		<ControlCodeDefinition Type="StartArc"
+							   Description="StartTangentArc"
+							   Code="STA" />
+		<ControlCodeDefinition Type="VerticalOffset"
+							   Description="VerticalOffset"
+							   Code="V" />
+	</ControlCodeDefinitions>
+	<ControlCodeBlockDefinitions>
+		<ControlCodeBlockDefinition Type="From1Point"
+									Description="InsertionPoint1"
+									Code="IP1" />
+		<ControlCodeBlockDefinition Type="From2Points"
+									Description="InsertionPoint2"
+									Code="IP2" />
+		<ControlCodeBlockDefinition Type="From3Points"
+									Description="InsertionPoint3"
+									Code="IP3" />
+		<ControlCodeBlockDefinition Type="Rotation"
+									Description="RotatesBlock"
+									Code="RBL" />
+		<ControlCodeBlockDefinition Type="ScaleX"
+									Description="ScalesX"
+									Code="SX" />
+		<ControlCodeBlockDefinition Type="ScaleY"
+									Description="ScalesY"
+									Code="SY" />
+		<ControlCodeBlockDefinition Type="ScaleZ"
+									Description="ScalesZ"
+									Code="SZ" />
+	</ControlCodeBlockDefinitions>
+	<FeatureDefinitions>
+		<BlockFeatureDefinition Code="BLOCK"
+								Name="Block Feature Definition"
+								Category="FeatureCodeGroupDefinition"
+								IncludeInSurface="true"
+								Color="FE000000"
+								Layer="0"
+								PointLayer="0"
+								PointLabelStyle=""
+								LineStyleName="By Layer"
+								BlockViewName="Block_View_Name"
+								ConstructionType="1"
+								BlockViewRotation="-0"
+								BlockViewScaleX="1"
+								BlockViewScaleY="1"
+								BlockViewScaleZ="1" />
+		<PolygonFeatureDefinition Code="POLYGON"
+								  Name="Polygon Feature Definition"
+								  Category="FeatureCodeGroupDefinition"
+								  Layer="0"
+								  IncludeInSurface="true"
+								  FillColor="FFD3D3D3"
+								  FillTransparency="50"
+								  FieldBorderLineStyle="Dashed Line"
+								  BorderColor="FE000000"
+								  BorderLineStyleName="Dashed Line"
+								  BorderLineStyleScale="1"
+								  PolygonLabelStyle=""
+								  PointLabelStyle=""
+								  PointLayer="0" />
+		<PointFeatureDefinition Code="POINT"
+								Name="Point Feature Definition"
+								Category="FeatureCodeGroupDefinition"
+								IncludeInSurface="true"
+								Color="FF0000FF"
+								Layer="0"
+								PointLabelStyle="">
+			<Attributes>
+				<StringAttribute Name="StringAttribute"
+								 Description="String Attribute Description"
+								 EntryMethod="Optional" />
+				<ListAttribute Name="ListAttribute"
+							   Description="List Attribute Description"
+							   EntryMethod="Optional"
+							   DefaultItemIndex="1">
+					<ListItems>
+						<Item>Item 1</Item>
+						<Item>Item 2</Item>
+						<Item>Item 3</Item>
+					</ListItems>
+				</ListAttribute>
+				<IntegerAttribute Name="IntegerAttribute"
+								  Description="Integer Attribute Description"
+								  EntryMethod="Optional"
+								  DefaultValue="1"
+								  MinimumValue="0"
+								  MaximumValue="10" />
+				<DoubleAttribute Name="DoubleAttribute"
+								 EntryMethod="Double Attribute Description"
+								 DefaultValue="0"
+								 MinimumValue="0"
+								 MaximumValue="5.5" />
+				<PhotoAttribute Name="PhotoAttribute"
+								EntryMethod="Required" />
+			</Attributes>
+			<Symbols>
+				<Symbol>
+					<DimensionOneValue>
+						<FixedValue>1</FixedValue>
+					</DimensionOneValue>
+					<DimensionTwoValue>
+						<FixedValue>1</FixedValue>
+					</DimensionTwoValue>
+					<DimensionThreeValue>
+						<FixedValue>1</FixedValue>
+					</DimensionThreeValue>
+					<Rotation>
+						<FixedValue>0</FixedValue>
+					</Rotation>
+					<Name>Symbol</Name>
+					<Color>FF0000FF</Color>
+					<SymbolName>Box</SymbolName>
+					<Scale>
+						<FixedValue>1</FixedValue>
+					</Scale>
+					<Dimensioning>Ground</Dimensioning>
+					<Description />
+					<ListAttribute Name=""
+								   Value="" />
+				</Symbol>
+			</Symbols>
+		</PointFeatureDefinition>
+		<LineFeatureDefinition Code="LINE"
+							   Name="Line Feature Definition"
+							   Category="FeatureCodeGroupDefinition"
+							   IncludeInSurface="true"
+							   Color="FF734F4D"
+							   Layer="0"
+							   FieldLineStyle="Dashed Line"
+							   LineStyleName="Dashed Line"
+							   LineStyleScale="1"
+							   LineLabelStyle=""
+							   PointLabelStyle=""
+							   PointLayer="0">
+			<Attributes>
+				<StringAttribute Name="StringAttribute"
+								 Description="String Attribute Description"
+								 EntryMethod="Optional" />
+				<ListAttribute Name="ListAttribute"
+							   Description="List Attribute Description"
+							   EntryMethod="Optional"
+							   DefaultItemIndex="1">
+					<ListItems>
+						<Item>Item 1</Item>
+						<Item>Item 2</Item>
+						<Item>Item 3</Item>
+					</ListItems>
+				</ListAttribute>
+				<IntegerAttribute Name="IntegerAttribute"
+								  Description="Integer Attribute Description"
+								  EntryMethod="Optional"
+								  DefaultValue="1"
+								  MinimumValue="0"
+								  MaximumValue="10" />
+				<DoubleAttribute Name="DoubleAttribute"
+								 EntryMethod="Double Attribute Description"
+								 DefaultValue="0"
+								 MinimumValue="0"
+								 MaximumValue="5.5" />
+				<PhotoAttribute Name="PhotoAttribute"
+								EntryMethod="Required" />
+			</Attributes>
+			<Lines>
+				<Line>
+					<Width>
+						<FixedValue>1</FixedValue>
+					</Width>
+					<HorizontalOffset>
+						<FixedValue>1</FixedValue>
+					</HorizontalOffset>
+					<VerticalOffset>
+						<FixedValue>1</FixedValue>
+					</VerticalOffset>
+					<Scale>
+						<FixedValue>1</FixedValue>
+					</Scale>
+					<OffsetDimensioning>Ground</OffsetDimensioning>
+					<Name>Offset</Name>
+					<Description>Offset Line</Description>
+					<Color>FE000000</Color>
+					<LineStyleName>Dashed Line</LineStyleName>
+				</Line>
+			</Lines>
+		</LineFeatureDefinition>
+	</FeatureDefinitions>
+	<FeatureCodeGroupDefinitions>
+		<FeatureCodeGroupDefinition Name="FeatureCodeGroupDefinition"
+									Description="Feature Code Group Definition Description">
+			<Items>
+				<Item>
+					<Code>BLOCK</Code>
+				</Item>
+				<Item>
+					<Code>POLYGON</Code>
+				</Item>
+				<Item>
+					<Code>POINT</Code>
+				</Item>
+				<Item>
+					<Code>LINE</Code>
+				</Item>
+			</Items>
+		</FeatureCodeGroupDefinition>
+	</FeatureCodeGroupDefinitions>
+	<BlockViews>
+		<BlockViewsData DataFileType="Dwg"
+						DataCompressionType="Zip"
+						DataFormatType="Base64">
+		</BlockViewsData>
+	</BlockViews>
+</FeatureCodingDefinitions>
